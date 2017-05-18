@@ -7,4 +7,21 @@
   </a>
 </div>
 
+<h1>My first attribute directive</h1>
+<!--<p myHighlight highlightColor='yellow'>1 Highlight me!!</p>-->
+<!--<p myHighlight [highlightColor]='"orange"'> 2 Highlight me!!</p>-->
+<!--<p myHighlight [highlightColor]='color'> 3 Highlight me!!</p>-->
+<p [myHighlight]='color'> 4 Highlight me!!</p>
+
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'"> green
+  <input type="radio" name="colors" (click)="color='blue'"> blue
+  <input type="radio" name="colors" (click)="color='purple'"> purple
+
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+
+</div>
+
 <hero-search></hero-search>
